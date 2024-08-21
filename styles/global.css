@@ -14,7 +14,7 @@
 }
 
 
-/* ----- Cabeçalho ----- */
+/* --------------------------- Cabeçalho --------------------------- */
 
 header {
   color: var(--text-color-primaria);
@@ -56,9 +56,13 @@ header nav ul li:hover {
 }
 
 
+/* --------------------------- Main --------------------------- */
+
+
 /* -------- Logo --------- */
 
 .logo-section {
+  margin: 0 auto;
   text-align: center;
   margin-top: 4.6rem;
 }
@@ -83,36 +87,44 @@ header nav ul li:hover {
   font-weight: 400;
   font-size: 1.8rem;
   padding: 0 0 6rem 0;
+  color: var(--text-color-primaria);
   border-bottom: solid 3px rgba(77, 77, 77, 0.2);
 }
 
 
 /* ----- Listagem de categorias ----- */
 
-main .listing-section {
+main nav ul {
   margin: 0 auto;
   width: fit-content;
-  height: fit-content;
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
 
-main section div {
+main .listing-section nav div {
   display: flex;
+  min-width: fit-content;
+  height: fit-content;
   gap: 2.2rem;
 }
 
 main section div:first-child {
   width: 100%;
-  height: 1.8rem;
   gap: 0.8rem;
+  margin-right: 2.5rem;
 }
 
-main section nav ul li {
+main nav ul li {
   font-family: var(--fonte-secundaria);
   font-style: italic;
   font-size: 1.6rem;
   line-height: 1.4rem;
   color: var(--text-color-terciaria);
+  cursor: pointer;
+  list-style: none;
+}
+
+main nav ul li:hover {
+  color: var(--text-color-secundaria);
 }
