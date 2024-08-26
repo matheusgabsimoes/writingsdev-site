@@ -1,5 +1,6 @@
 :root {
   --bg-color-primaria: #232830;
+  --bg-color-secundaria: #FFFF;
   --text-color-primaria: #FFF;
   --text-color-secundaria: #FF7575;
   --text-color-terciaria: #909090;
@@ -7,10 +8,12 @@
   --border-color: #4D4D4D;
   --fonte-primaria: 'Poppins';
   --fonte-secundaria: 'Recursive';
+  --fonte-terciaria: 'Source Sans 3';
 }
 
 * {
   background-color: var(--bg-color-primaria);
+  text-decoration: none;
 }
 
 
@@ -22,7 +25,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  margin-top: 5.6rem;
+  margin-top: 85px;
 }
 
 header nav ul {
@@ -30,8 +33,8 @@ header nav ul {
   width: fit-content;
   display: flex;
   align-items: center;
-  gap: 2.25rem;
-  padding: 0 2rem;
+  gap: 36px;
+  padding: 0 32px;
 }
 
 header nav ul li {
@@ -45,8 +48,10 @@ header nav ul li {
   font-weight: 400;
 }
 
-.writings {
-  margin-right: 41.25rem;
+header nav ul li:first-child {
+  position: relative;
+  right: 50%;
+  margin-right: 50%;
   font-size: 1.9rem;
   line-height: 2.8rem;
 }
@@ -56,20 +61,18 @@ header nav ul li:hover {
 }
 
 
-/* --------------------------- Main --------------------------- */
-
-
 /* -------- Logo --------- */
 
 .logo-section {
   margin: 0 auto;
   text-align: center;
-  margin-top: 4.6rem;
+  margin-top: 73px;
+  width: 100%;
 }
 
 .logo-section img {
   width: 100%;
-  height: 12.8rem;
+  height: 204px;
 }
 
 .logo-section h1 {
@@ -78,41 +81,45 @@ header nav ul li:hover {
   font-weight: 400;
   font-size: 4.4rem;
   font-style: italic;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 40px;
+  margin-bottom: 16px;
 }
 
 .logo-section h2 {
   font-family: var(--fonte-primaria);
   font-weight: 400;
   font-size: 1.8rem;
-  padding: 0 0 6rem 0;
+  padding: 0 0 96px 0;
   color: var(--text-color-primaria);
   border-bottom: solid 3px rgba(77, 77, 77, 0.2);
 }
 
 
-/* ----- Listagem de categorias ----- */
+/* --------------------------- Main --------------------------- */
+
+
+/* --------- Listagem de categorias --------- */
 
 main nav ul {
   margin: 0 auto;
   width: fit-content;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 16px;
 }
+
 
 main .listing-section nav div {
   display: flex;
   min-width: fit-content;
   height: fit-content;
-  gap: 2.2rem;
+  gap: 36px;
 }
 
-main section div:first-child {
+main .listing-section div:first-child {
   width: 100%;
-  gap: 0.8rem;
-  margin-right: 2.5rem;
+  gap: 13px;
+  margin-right: 36px;
 }
 
 main nav ul li {
@@ -127,4 +134,152 @@ main nav ul li {
 
 main nav ul li:hover {
   color: var(--text-color-secundaria);
+}
+
+
+/* --------- Listagem de Artigos  --------- */
+
+main article {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 101px;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1244px;
+}
+
+.articles-coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 390px;
+  min-height: 439px;
+  padding: 26px;
+  cursor: pointer;  
+  border-radius: 22px;
+  margin-bottom: 37px;
+}
+
+.articles-coluna:hover {
+  transform: translateY(-5px);
+}
+
+.articles-coluna img {
+  width: 99%;
+  border-radius: 22px;
+  height: auto;
+  margin-bottom: 33px;
+}
+
+.articles-coluna h1 {
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin-bottom: 13px;
+  color: var(--text-color-quartenaria);
+}
+
+.articles-coluna p {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-top: 14px;
+  color: var(--text-color-quartenaria);
+}
+
+.articles-coluna div:last-child {
+  margin-right: 140px;
+}
+
+.articles-container * {
+  background-color: var(--bg-color-secundaria);
+}
+
+
+/* --------- Numeração das páginas --------- */
+
+.numeracaoDaPagina {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 115px 0 157px 0;
+  border-bottom: solid 3px rgba(77, 77, 77, 0.2);
+}
+
+.numeracaoDaPagina nav {
+  width: 100%;
+}
+
+.numeracaoDaPagina nav ul {
+  gap: 43px;
+}
+
+.numeracaoDaPagina li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+
+.numeracaoDaPagina ul li span:hover {
+  font-weight: 700;
+  border-top: solid 3px;
+  border-color: var(--text-color-secundaria);
+}
+
+
+/* --------- Rodapé --------- */
+
+.rodape ul {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.rodape nav {
+  width: 100%;
+  position: relative;
+  padding: 32px 0 129px 0;
+}
+
+.rodape nav ul {
+  gap: 16px;
+}
+
+.rodape li {
+  font-size: 1.9rem;
+  list-style: none;
+  font-family: var(--fonte-terciaria);
+  color: var(--text-color-primaria);
+  line-height: 2.3rem;
+  font-weight: 600;
+}
+ 
+.rodape li span, .rodape img {
+  background-color: #4699E0;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.rodape img {
+  width: 7%;
+  padding: 0;
+}
+
+.rodape li:last-child {
+  position: relative;
+  margin-left: 703px;
 }
