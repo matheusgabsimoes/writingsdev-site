@@ -48,6 +48,7 @@ header nav ul li {
   font-weight: 400;
 }
 
+
 header nav ul li:first-child {
   position: relative;
   right: 50%;
@@ -99,6 +100,12 @@ header nav ul li:hover {
 
 
 /* --------- Listagem de categorias --------- */
+
+.listing-section {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
 
 main nav ul {
   margin: 0 auto;
@@ -212,7 +219,7 @@ main article {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 115px 0 157px 0;
+  padding: 132px 0 157px 0;
   border-bottom: solid 3px rgba(77, 77, 77, 0.2);
 }
 
@@ -240,46 +247,88 @@ main article {
 
 /* --------- Rodapé --------- */
 
-.rodape ul {
+.rodape {
   margin: 0 auto;
-  width: fit-content;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 129px;
+}
+
+.rodape ul {
   display: flex;
-  align-items: center;
-}
-
-.rodape nav {
+  justify-content: center;
   width: 100%;
-  position: relative;
-  padding: 32px 0 129px 0;
+  gap: 13px;
 }
 
-.rodape nav ul {
-  gap: 16px;
-}
-
-.rodape li {
-  font-size: 1.9rem;
+.rodape ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
   list-style: none;
   font-family: var(--fonte-terciaria);
   color: var(--text-color-primaria);
   line-height: 2.3rem;
   font-weight: 600;
 }
- 
+
 .rodape li span, .rodape img {
   background-color: #4699E0;
   padding: 5px 12px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.4rem;
 }
 
+.rodape li:last-child {
+  margin-left: 30%;
+}
+
 .rodape img {
-  width: 7%;
+  width: 8%;
   padding: 0;
 }
 
-.rodape li:last-child {
-  position: relative;
-  margin-left: 703px;
+
+/* --------- Mobile media --------- */
+
+@media (max-width: 1200px) {
+
+  body {
+    width: 95%;
+  }
+
+  header nav ul {
+    width: 90%;
+  }
+
+  footer div {
+    width: 90%;
+  }
+
+  header nav ul li:first-child {
+    display: flex;
+    justify-content: flex-start;
+    right: 0;
+    margin-right: auto;
+  }
+
+  .listing-section {
+    width: 76%;
+  }
+
+  main .listing-section nav div {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .articles-container {
+    justify-content: space-evenly;
+    width: 95%;
+  }
+
+  .rodape li:last-child {
+    margin-left: auto;
+  }
 }
