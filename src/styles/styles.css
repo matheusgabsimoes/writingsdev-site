@@ -1,0 +1,20 @@
+@import url(./header.css);
+@import url(./logo-section.css);
+@import url(./listing-section.css);
+@import url(./articles.css);
+@import url(./page-number.css);
+@import url(./footer.css);
+@import url(./media.css);
+
+:root {
+  --bg-color-primaria: #232830;
+  --bg-color-secundaria: #FFFF;
+  --text-color-primaria: #FFF;
+  --text-color-secundaria: #FF7575;
+  --text-color-terciaria: #909090;
+  --text-color-quartenaria: #0F1217;
+  --border-color: #4D4D4D;
+  --fonte-primaria: 'Poppins';
+  --fonte-secundaria: 'Recursive';
+  --fonte-terciaria: 'Source Sans 3';
+}

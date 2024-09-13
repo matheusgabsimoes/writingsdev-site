@@ -1,0 +1,45 @@
+header {
+   color: var(--text-color-primaria);
+   height: fit-content;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   margin-top: 85px;
+}
+ 
+header div img, header div input, .lista-menu-item {
+   display: none;
+}
+ 
+header nav ul {
+   margin: 0 auto;
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 36px;
+   padding: 0 32px;
+}
+ 
+header nav ul li {
+   min-width: fit-content;
+   height: fit-content;
+   font-size: 1.5rem;
+   cursor: pointer;
+   list-style: none;
+   font-family: var(--fonte-primaria);
+   line-height: 2.25rem;
+   font-weight: 400;
+}
+ 
+ 
+header nav ul li:first-child {
+   position: relative;
+   right: 50%;
+   margin-right: 50%;
+   font-size: 1.9rem;
+   line-height: 2.8rem;
+}
+ 
+header nav ul li:hover {
+   color: var(--text-color-secundaria);
+}

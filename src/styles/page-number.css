@@ -1,0 +1,29 @@
+.numeracaoDaPagina {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 132px 0 157px 0;
+  border-bottom: solid 3px rgba(77, 77, 77, 0.2);
+}
+
+.numeracaoDaPagina nav {
+  width: 100%;
+}
+
+.numeracaoDaPagina nav ul {
+  gap: 43px;
+}
+
+.numeracaoDaPagina li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+
+.numeracaoDaPagina ul li span:hover {
+  font-weight: 700;
+  border-top: solid 3px;
+  border-color: var(--text-color-secundaria);
+}

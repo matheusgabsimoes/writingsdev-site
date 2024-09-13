@@ -1,0 +1,47 @@
+footer a {
+  background-color: #4699E0;
+  color: var(--text-color-primaria);
+}
+
+.rodape {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 129px;
+}
+ 
+.rodape ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 13px;
+}
+ 
+.rodape ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  list-style: none;
+  font-family: var(--fonte-terciaria);
+  color: var(--text-color-primaria);
+  line-height: 2.3rem;
+  font-weight: 600;
+}
+ 
+.rodape li span, .rodape img {
+  background-color: #4699E0;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+}
+ 
+.rodape li:last-child {
+  margin-left: 30%;
+}
+ 
+.rodape img {
+  width: 8%;
+  padding: 0;
+}

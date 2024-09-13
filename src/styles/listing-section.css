@@ -1,0 +1,41 @@
+.listing-section {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+ 
+main nav ul {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+ 
+ 
+main .listing-section nav div {
+  display: flex;
+  min-width: fit-content;
+  height: fit-content;
+  gap: 36px;
+}
+ 
+main .listing-section div:first-child {
+  width: 100%;
+  gap: 13px;
+  margin-right: 36px;
+}
+ 
+main nav ul li {
+  font-family: var(--fonte-secundaria);
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  color: var(--text-color-terciaria);
+  cursor: pointer;
+  list-style: none;
+}
+ 
+main nav ul li:hover {
+  color: var(--text-color-secundaria);
+}
