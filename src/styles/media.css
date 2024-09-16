@@ -47,3 +47,79 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 641px) {
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+  header nav ul li:first-child {
+    font-size: 1.5rem;
+  }
+  .logo-section h1 {
+    font-size: 3.6rem;
+  }
+  .logo-section h2 {
+    font-size: 1.4rem;
+  }
+  main nav ul li {
+    font-size: 1.2rem;
+  }
+  main section img {
+    width: 20px;
+  }
+  .articles-container {
+    width: 95%;
+  }
+  .articles-coluna {
+    min-width: 280px;
+  }
+  .numeracaoDaPagina li {
+    font-size: 1.2rem;
+  }
+  .rodape ul li {
+    font-size: 1.4rem;
+  }
+  .rodape li span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 421px){
+  header nav ul li {
+    font-size: 0.8em;
+  }
+  header nav ul li:first-child {
+    font-size: 1rem;
+  }
+  .logo-section img {
+    width: 40%;
+    margin-left: 60px;
+  }
+  .logo-section h1 {
+    font-size: 2.6rem;
+  }
+  .logo-section h2 {
+    font-size: 1rem;
+  }
+  main nav ul li {
+    font-size: 1rem;
+  }
+  main section img {
+    width: 16px;
+  }
+  .articles-container {
+    width: 87%;
+  }
+  .articles-coluna {
+    min-width: 360px;
+  }
+  .numeracaoDaPagina li {
+    font-size: 1rem;
+  }
+  .rodape ul li {
+    font-size: 1.1rem;
+  }
+  .rodape li span {
+    font-size: 0.7rem;
+  }
+}
