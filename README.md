@@ -1,7 +1,7 @@
 ## Writings.dev
 
 Este é um projeto de estudo que replica o design do site Writings for Developers, criado por Kamran Ahmed (Roadmap.sh).
-Desenvolimento de uma página estática utilizando HTML e CSS, aplicando os conhecimentos adquiridos no curso "A partir do zero: HTML e CSS para projetos web" da Alura.​
+Desenvolvimento de uma página estática utilizando HTML e CSS, aplicando os conhecimentos adquiridos no curso "A partir do zero: HTML e CSS para projetos web" da Alura.​
 
 Tecnologias Utilizadas:
 
